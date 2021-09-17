@@ -28,6 +28,6 @@ We are going to create a Webex Bot that uses the DNA Center API's to do the foll
 
 If you don't already have a [Webex Teams](https://www.webex.com/team-collaboration.html) account, go ahead and register for one. They are free! 
 
-  1.) You'll need to start by adding your bot to the Webex Teams webiste 
+1.) You'll need to start by adding your bot to the Webex Teams webiste 
     
   [https://developer.webex.com/my-apps](https://developer.webex.com/my-apps)
