@@ -28,6 +28,71 @@ We are going to create a Webex Bot that uses the DNA Center API's to do the foll
 
 If you don't already have a [Webex Teams](https://www.webex.com/team-collaboration.html) account, go ahead and register for one. They are free! 
 
-1.) You'll need to start by adding your bot to the Webex Teams webiste 
+1. You'll need to start by adding your bot to the Webex Teams webiste 
     
-  [https://developer.webex.com/my-apps](https://developer.webex.com/my-apps)
+    [https://developer.webex.com/my-apps](https://developer.webex.com/my-apps)
+    
+2. Click **Create a New App** 
+    
+    ![Screen Shot 2021-09-17 at 11 01 15 AM](https://user-images.githubusercontent.com/80418373/133818934-1b084325-8d37-471c-82f6-0e23971794d0.png)
+    
+3. Click **Create a Bot**
+    
+    ![Screen Shot 2021-09-17 at 11 02 41 AM](https://user-images.githubusercontent.com/80418373/133819125-0e231885-99b0-4708-b021-28fc2878bd06.png)
+    
+4. Fill out all the details about your bot. 
+    
+    ![Screen Shot 2021-09-17 at 11 04 27 AM](https://user-images.githubusercontent.com/80418373/133819329-9f9d1bf4-76ed-4c25-960b-d2d2ef524e61.png)
+    
+5. Click **Add Bot**
+
+6. On the Congratluations screen, make sure to copy the Bot's Access token, you will need this. 
+
+# ngrok 
+
+[ngrok](https://ngrok.com/) makes it easy for you to develop your code with a live bot. 
+
+You can find installation instructions here: https://ngrok.com/download
+
+1. After you've installed ngrok, in another window start the service 
+    
+        ngrok http 8080
+
+2. You should see screen that looks like this: 
+
+        ngrok by @inconshreveable                                                     (Ctrl+C to quit)
+
+        Session Status                online
+        Account                       brandon.friedrich@gmail.com (Plan: Free)
+        Version                       2.3.40
+        Region                        United States (us)
+        Web Interface                 http://127.0.0.1:4040
+        Forwarding                    http://this.is.the.url.you.net.ngrok.io -> http://localhost:8080
+        Forwarding                    http://this.is.the.url.you.net.ngrok.io -> http://localhost:8080
+
+        Connections                   ttl     opn     rt1     rt5     p50     p90
+                                        0       0       0.00    0.00    0.00    0.00
+3. You will use the Forwarding ULR in the config.py file with this URL: 
+
+        TEAMS_BOT_URL=os.envrion.get('TEAMS_BOT_URL','http://this.is.the.url.you.net.ngrok.io')
+        
+# Config File 
+
+Update the config.py file with the releveant information of your Cisco DNA Center Appliance or you can use our DNA Center Sandbox.
+
+Example config.py with Cisco DNA Center Sandbox information: 
+
+        import os
+        DNAC=os.environ.get('DNAC','https://sandboxdnac.cisco.com')
+        DNAC_PORT=os.environ.get('DNAC_PORT',443)
+        DNAC_USER=os.environ.get('DNAC_USER','devnetuser')
+        DNAC_PASSWORD=os.environ.get('DNAC_PASSWORD','Cisco123!')
+        TEAMS_BOT_URL=os.envrion.get('TEAMS_BOT_URL','http://this.is.the.url.you.net.ngrok.io')
+
+
+
+
+ 
+
+
+
