@@ -2,7 +2,7 @@
 
 DNA Center is a complete managment and control platform that simpliefies and streamlines network operations. This single, extensible software platform includes intergrated tools for NetOps, SecOps, DevOps and IoT connecvitity with AI/ML technology integrated throughout. 
 
-Benefits
+# Benefits
 
 ●      Simplify management. Operate your local and branch networks over a centralized dashboard.
 
