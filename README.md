@@ -30,4 +30,4 @@ If you don't already have a [Webex Teams](https://www.webex.com/team-collaborati
 
   1.) You'll need to start by adding your bot to the Webex Teams webiste 
     
-    [https://developer.webex.com/my-apps](https://developer.webex.com/my-apps)
+  [https://developer.webex.com/my-apps](https://developer.webex.com/my-apps)
