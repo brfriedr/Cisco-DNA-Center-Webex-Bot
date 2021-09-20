@@ -13,7 +13,7 @@ DNA Center is a complete management and control platform that simplifies and str
 
 Webex Teams Bots gives users access to outside services right from their Webex spaces. Bots help users automate tasks, bring external content into the discussions, and gain efficiencies. Bots come in all different shapes and sizes such as notifiers, controllers, and assists. 
 
-The ability to integrate Cisco DNA Center Platform API's into Webex Bots provides us a powerful way to manage and get insights into whats happen within our network. 
+The ability to integrate Cisco DNA Center Platform API's into Webex Bots provides us a powerful way to manage and get insights into whats happing within our network. 
 
 # What are we going to do? 
 
