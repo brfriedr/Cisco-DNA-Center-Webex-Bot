@@ -106,6 +106,11 @@ Below are the example interactions with the Bot Script.
 
 Update the config.py parameters then run the Bot.py script to see it in action! 
 
+Example output
+
+![Screen Shot 2021-09-20 at 3 05 42 PM](https://user-images.githubusercontent.com/80418373/134067914-ed1add42-0d41-4fc6-a50c-7edf187dfa77.png)
+
+
 # Cisco DNA Center Real Time Event Alerts to Webex Teams Bot 
 
 Cisco DNA Center has a powerful issue correlation engine for wired and wireless networks. Taking real time feeds of network telemerty is able to idenfity issues and provide context for resolution. We now have the ability to send those notifications to a Webex Team Room's in 2.2.3.0 release. 
