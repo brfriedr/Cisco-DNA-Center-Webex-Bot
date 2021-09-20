@@ -1,6 +1,6 @@
 # Cisco DNA Center Bot
 
-DNA Center is a complete managment and control platform that simpliefies and streamlines network operations. This single, extensible software platform includes intergrated tools for NetOps, SecOps, DevOps and IoT connecvitity with AI/ML technology integrated throughout. 
+DNA Center is a complete management and control platform that simplifies and streamlines network operations. This single, extensible software platform includes integrated tools for NetOps, SecOps, DevOps and IoT connectivity with AI/ML technology integrated throughout. 
 
 #### Benefits
 
@@ -11,9 +11,9 @@ DNA Center is a complete managment and control platform that simpliefies and str
 * **Ensure network and application performance:** AI/ML network insights reduce time spent managing network operations and improve user experience.
 * **Facilitate offsite IT teams:** Optimized for remote access, a clean, organized dashboard with single-button workflows makes remote management easy.
 
-Webex Teams Bots gives users access to outside services right from their Webex spaces. Bots help users automate tasks, bring external content into the discussions, and gain efficiences. Bots come in all different shapes and sizes such as notifiers, controllers, and assists. 
+Webex Teams Bots gives users access to outside services right from their Webex spaces. Bots help users automate tasks, bring external content into the discussions, and gain efficiencies. Bots come in all different shapes and sizes such as notifiers, controllers, and assists. 
 
-The ability to intergrate Cisco DNA Center Platform API's into Webex Bots provides us a powerful way to manage and get insites into whats happen within our network. 
+The ability to integrate Cisco DNA Center Platform API's into Webex Bots provides us a powerful way to manage and get insights into whats happen within our network. 
 
 # What are we going to do? 
 
@@ -28,7 +28,7 @@ We are going to create a Webex Bot that uses the DNA Center API's to do the foll
 
 If you don't already have a [Webex Teams](https://www.webex.com/team-collaboration.html) account, go ahead and register for one. They are free! 
 
-1. You'll need to start by adding your bot to the Webex Teams webiste 
+1. You'll need to start by adding your bot to the Webex Teams website 
     
     [https://developer.webex.com/my-apps](https://developer.webex.com/my-apps)
     
@@ -46,7 +46,7 @@ If you don't already have a [Webex Teams](https://www.webex.com/team-collaborati
     
 5. Click **Add Bot**
 
-6. On the Congratluations screen, make sure to copy the Bot's Access token, you will need this. 
+6. On the Congratulations screen, make sure to copy the Bot's Access token, you will need this. 
 
 # ngrok 
 
@@ -78,7 +78,7 @@ You can find installation instructions here: https://ngrok.com/download
         
 # Config File 
 
-Update the config.py file with the releveant information of your Cisco DNA Center Appliance or you can use our DNA Center Sandbox.
+Update the config.py file with the relevant information of your Cisco DNA Center Appliance or you can use our DNA Center Sandbox.
 
 Example config.py with Cisco DNA Center Sandbox information: 
 
@@ -113,15 +113,15 @@ Example output
 
 # Cisco DNA Center Real Time Event Alerts to Webex Teams Bot 
 
-Cisco DNA Center has a powerful issue correlation engine for wired and wireless networks. Taking real time feeds of network telemerty is able to idenfity issues and provide context for resolution. We now have the ability to send those notifications to a Webex Team Room's in 2.2.3.0 release. 
+Cisco DNA Center has a powerful issue correlation engine for wired and wireless networks. Taking real time feeds of network telemetry is able to identify issues and provide context for resolution. We now have the ability to send those notifications to a Webex Team Room's in 2.2.3.0 release. 
 
-1.) In Cisco DNA Center naviage to Platform -> Developer Toolkit and the Events Tab.
+1.) In Cisco DNA Center navigate to Platform -> Developer Toolkit and the Events Tab.
 
 ![Screen Shot 2021-09-20 at 2 55 19 PM](https://user-images.githubusercontent.com/80418373/134066574-61efac9b-fbda-4f51-a5a8-ed001d69fffe.png)
 
-2.) Select the events you want to be notfied about to your Webex Teams Room then click "Subscribe". 
+2.) Select the events you want to be notified about to your Webex Teams Room then click "Subscribe". 
 
-3.) Create a Name for the subscription then select Webex for the Subscripton Type.  
+3.) Create a Name for the subscription then select Webex for the Subscription Type.  
 
 ![Screen Shot 2021-09-20 at 2 57 27 PM](https://user-images.githubusercontent.com/80418373/134066822-27516f03-364c-479a-bd34-11ed13266167.png)
 
@@ -131,7 +131,7 @@ Cisco DNA Center has a powerful issue correlation engine for wired and wireless 
 
 ![Screen Shot 2021-09-20 at 3 01 06 PM](https://user-images.githubusercontent.com/80418373/134067277-7414dac6-9360-4726-ad7d-7626b803b50a.png)
 
-5.) You can now test your intergration by selecting "Try it" 
+5.) You can now test your integration by selecting "Try it" 
 
 ![Screen Shot 2021-09-20 at 3 03 34 PM](https://user-images.githubusercontent.com/80418373/134067606-b322bee0-a765-4578-abfe-73d69e5cd247.png)
 
