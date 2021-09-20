@@ -92,7 +92,7 @@ Example config.py with Cisco DNA Center Sandbox information:
 
 # Webex Bot Script 
 
-The Bot.py script is leveraging the Flask web service [micro-framework](http://flask.pocoo.org/). We are using ngrok to be used to tunnel traffic back to your local machine sites. When interacting with the Bot we are calling functions in the DNAC.py script make API calls to the Cisco DNA Center you specified in the config file. 
+The Bot.py script is leveraging the Flask web service [micro-framework](http://flask.pocoo.org/). We are using ngrok to be used to tunnel traffic back to your local machine sites. When interacting with the Bot, we are calling functions in the DNAC.py script to make API calls to the Cisco DNA Center you specified in the config file. 
 
 This script is an example of different interactions you could create between your Bot and Cisco DNA Center. 
 
@@ -113,7 +113,7 @@ Example output
 
 # Cisco DNA Center Real Time Event Alerts to Webex Teams Bot 
 
-Cisco DNA Center has a powerful issue correlation engine for wired and wireless networks. Taking real time feeds of network telemetry is able to identify issues and provide context for resolution. We now have the ability to send those notifications to a Webex Team Room's in 2.2.3.0 release. 
+Cisco DNA Center has a powerful issue correlation engine for wired and wireless networks. Real time feeds of network telemetry is able to identify issues and provide context for resolution. We now have the ability to send those notifications to a Webex Team Rooms in 2.2.3.0 release. 
 
 1.) In Cisco DNA Center navigate to Platform -> Developer Toolkit and the Events Tab.
 
