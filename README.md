@@ -144,3 +144,7 @@ Cisco DNA Center has a powerful issue correlation engine for wired and wireless 
 Here is a link to the Cisco DNA Center Devnet Learning Lab to learn how to leverage the Cisco DNA Center API's.
 
 [Introduction to Cisco DNA Center REST APIs](https://developer.cisco.com/learning/modules/dnac-rest-apis)
+
+# License
+
+This project is licensed to you under the terms of the [Cisco Sample Code License.](https://github.com/brfriedr/Cisco-DNA-Center-Webex-Bot/blob/main/LICENSE)
