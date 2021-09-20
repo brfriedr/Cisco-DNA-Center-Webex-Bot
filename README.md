@@ -72,7 +72,7 @@ You can find installation instructions here: https://ngrok.com/download
 
         Connections                   ttl     opn     rt1     rt5     p50     p90
                                         0       0       0.00    0.00    0.00    0.00
-3. You will use the Forwarding ULR in the config.py file with this URL: 
+3. You will use the Forwarding URL in the config.py file with this URL: 
 
         TEAMS_BOT_URL=os.envrion.get('TEAMS_BOT_URL','http://this.is.the.url.you.net.ngrok.io')
         
@@ -92,7 +92,7 @@ Example config.py with Cisco DNA Center Sandbox information:
 
 # Webex Bot Script 
 
-The Bot.py script is leveraging the Flask web service [micro-framework](http://flask.pocoo.org/). I am using ngrok to be used to tunnel traffic back to your local machine sites. When interacting with the Bot we are calling functions in the DNAC.py script make API calls to the Cisco DNA Center you specified in the config file. 
+The Bot.py script is leveraging the Flask web service [micro-framework](http://flask.pocoo.org/). We are using ngrok to be used to tunnel traffic back to your local machine sites. When interacting with the Bot we are calling functions in the DNAC.py script make API calls to the Cisco DNA Center you specified in the config file. 
 
 This script is an example of different interactions you could create between your Bot and Cisco DNA Center. 
 
