@@ -50,7 +50,7 @@ If you don't already have a [Webex Teams](https://www.webex.com/team-collaborati
 
 # ngrok 
 
-[ngrok](https://ngrok.com/) makes it easy for you to develop your code with a live bot. 
+[ngrok](https://ngrok.com/) makes it easy for you to develop your code with a live bot. Ngrok exposes local servers behind NATs and firewalls to the public internet over secure tunnels. It instantly creates a public HTTPS url for a webist running locacally on your development machine. Ngrok offloads TLS, so you don't have to worry about your configuration. 
 
 You can find installation instructions here: https://ngrok.com/download
 
