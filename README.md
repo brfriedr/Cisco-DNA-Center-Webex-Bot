@@ -90,10 +90,46 @@ Example config.py with Cisco DNA Center Sandbox information:
         WEBEX_BOT_ACCESS_TOKEN=os.environ.get('WEBEX_BOT_ACCESS_TOKEN','Enter your webex toekn from the preq step 6')
         TEAMS_BOT_URL=os.envrion.get('TEAMS_BOT_URL','http://this.is.the.url.you.net.ngrok.io')
 
+# Webex Bot Script 
 
+The Bot.py script is leveraging the Flask web service [micro-framework](http://flask.pocoo.org/). I am using ngrok to be used to tunnel traffic back to your local machine sites. When interacting with the Bot we are calling functions in the DNAC.py script make API calls to the Cisco DNA Center you specified in the config file. 
 
+This script is an example of different interactions you could create between your Bot and Cisco DNA Center. 
 
- 
+Below are the example interactions with the Bot Script. 
 
+    Help me - I will display what I can do.
+    Hello - I will display my greeting message.
+    List devices - I will list devices in DNA Center.
+    Show Device Config - I will attach the device configuraiton for your device.
+    Image Compliance - I will show the image software compliance.
 
+Update the config.py parameters then run the Bot.py script to see it in action! 
 
+# Cisco DNA Center Real Time Event Alerts to Webex Teams Bot 
+
+Cisco DNA Center has a powerful issue correlation engine for wired and wireless networks. Taking real time feeds of network telemerty is able to idenfity issues and provide context for resolution. We now have the ability to send those notifications to a Webex Team Room's in 2.2.3.0 release. 
+
+1.) In Cisco DNA Center naviage to Platform -> Developer Toolkit and the Events Tab.
+
+![Screen Shot 2021-09-20 at 2 55 19 PM](https://user-images.githubusercontent.com/80418373/134066574-61efac9b-fbda-4f51-a5a8-ed001d69fffe.png)
+
+2.) Select the events you want to be notfied about to your Webex Teams Room then click "Subscribe". 
+
+3.) Create a Name for the subscription then select Webex for the Subscripton Type.  
+
+![Screen Shot 2021-09-20 at 2 57 27 PM](https://user-images.githubusercontent.com/80418373/134066822-27516f03-364c-479a-bd34-11ed13266167.png)
+
+4.) Enter the Webex URL along with the Webex Room ID where you want the alerts to be posted and your Webex Access Bot Token. (You can find your webex room id's at [developer.webex.com](https://developer.webex.com/docs/api/v1/rooms/get-room-meeting-details))
+
+![Screen Shot 2021-09-20 at 3 01 57 PM](https://user-images.githubusercontent.com/80418373/134067388-9e484b6b-55f8-4382-bb36-3f24099df4d6.png)
+
+![Screen Shot 2021-09-20 at 3 01 06 PM](https://user-images.githubusercontent.com/80418373/134067277-7414dac6-9360-4726-ad7d-7626b803b50a.png)
+
+5.) You can now test your intergration by selecting "Try it" 
+
+![Screen Shot 2021-09-20 at 3 03 34 PM](https://user-images.githubusercontent.com/80418373/134067606-b322bee0-a765-4578-abfe-73d69e5cd247.png)
+
+6.) If you setup everything correctly you will see the notification in your Cisco Webex Team Room. 
+
+![Screen Shot 2021-09-20 at 3 04 06 PM](https://user-images.githubusercontent.com/80418373/134067679-1caac760-b9ae-41e8-acca-ddfd7b62391e.png)
